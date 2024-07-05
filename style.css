@@ -9,6 +9,7 @@ p  {
   font-family: sans-serif;
   font-style: italic;
   font-weight: bold;
+  border: 2px solid black;
 }
 body  {
   background-color: aquamarine;
@@ -18,4 +19,12 @@ div {
   padding-bottom: 25px;
   padding-left: 15x;
   padding-right: 10px;
+}
+li  {
+  display:inline;
+  font-size: large;
+  padding-inline: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
