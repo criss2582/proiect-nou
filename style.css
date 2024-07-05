@@ -1,7 +1,21 @@
-ul {
-
-  color: red;
+#mainTitle {
+  color:rgb(20, 41, 118);
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+ font-size: 40px;
 }
-h1 {
-  color: blue;
+p  {
+  font-size: x-large;
+  color: rgb(7, 30, 20);
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+body  {
+  background-color: aquamarine;
+}
+div {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15x;
+  padding-right: 10px;
 }
