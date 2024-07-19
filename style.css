@@ -1,30 +1,25 @@
-#mainTitle {
-  color:rgb(20, 41, 118);
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
- font-size: 40px;
-}
-p  {
-  font-size: x-large;
-  color: rgb(7, 30, 20);
-  font-family: sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  border: 2px solid black;
-}
-body  {
-  background-color: aquamarine;
-}
-div {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 15x;
-  padding-right: 10px;
-}
-li  {
-  display:inline;
-  font-size: large;
-  padding-inline: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
+h1 {
+  font-family: "MedievalSharp", cursive;
+  color: darkolivegreen;
+  font-size: 85px;
+  font-weight: 400;
+  text-align: center;
 }
+p {
+  color: rgb(231, 240, 240);
+  font-size: 25px;
+  font-family: "Playwrite HU", cursive;
+  font-weight: 100px;
+  text-justify: auto;
+}
+body {
+  background-color: cornflowerblue;
+}
+#meniu {
+float: right;
+margin-top: 0;
+margin-right: 0%;
+text-align: right;
+}
+ 
