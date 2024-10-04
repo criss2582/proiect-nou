@@ -86,5 +86,19 @@ body {
   li {
     display: inline;
     margin-right: 15px;
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #faebd7;
+      color: #2a2014;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e6ceaf;
+    }
   }
 }
