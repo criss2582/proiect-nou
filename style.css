@@ -110,6 +110,7 @@ body {
   position: relative;
   box-sizing: border-box;
 
+
   ul {
     li {
       display: inline;
@@ -129,11 +130,17 @@ body {
 
 ul {
   list-style-type: none;
-  margin-right: auto;
-
 }
 
 li i {
   margin-right: 10px;
   color: #d77b90;
+}
+
+.section h2 {
+  margin-left: 41px;
+}
+
+.section p {
+  margin-left: 41px;
 }
