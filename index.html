@@ -47,17 +47,43 @@
       </section>
     </div>
     <div id="content">
-      <ul id="episods">
-        <li>
-          <i class="fa-solid fa-square-caret-right"></i>Anette primeste un cadou
+      <ul id="episodes">
+        <li data-audio="/assets/episod1.mp3">
+          <i class="fa-solid fa-square-caret-right"></i> Anette primește un
+          cadou
         </li>
-        <li><i class="fa-solid fa-square-caret-right"></i>Dani se face mare</li>
-        <li>
-          <i class="fa-solid fa-square-caret-right"></i>O surpriza in cizme
+        <li data-audio="episod2.mp3">
+          <i class="fa-solid fa-square-caret-right"></i> Dani se face mare
         </li>
-        <li><i class="fa-solid fa-square-caret-right"></i>Cearta</li>
+        <li data-audio="episod3.mp3">
+          <i class="fa-solid fa-square-caret-right"></i> O surpriză în cizme
+        </li>
+        <li data-audio="episod4.mp3">
+          <i class="fa-solid fa-square-caret-right"></i> Cearta
+        </li>
       </ul>
     </div>
     <div class="footer">&copy; Toate drepturile rezervate 2024.</div>
+    <audio id="audioPlayer" controls></audio>
+
+    <script>
+      // Select the episode 1 element and the audio player
+      const episode1 = document.querySelector(
+        '#episodes li[data-audio="/assets/episod1.mp3"]'
+      );
+
+      const audioPlayer = document.getElementById("audioPlayer");
+
+      // Add a click event listener to episode 1
+      episode1.addEventListener("click", () => {
+        // Get the audio file path from the data-audio attribute
+        const audioSrc = episode1.getAttribute("data-audio");
+
+        // Set the audio player source to the audio file and play
+        audioPlayer.src = audioSrc;
+        audioPlayer.style.display = "block"; // Make the player visible
+        audioPlayer.play();
+      });
+    </script>
   </body>
 </html>
