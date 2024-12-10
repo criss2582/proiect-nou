@@ -39,51 +39,42 @@
         <h2>Cufarul cu povesti</h2>
         <p>Selecteaza povestea</p>
         <ul class="story-list">
-          <li><button>Urme pe zapada</button></li>
-          <li><button>Hamid si Kinza</button></li>
+          <li><button id="urmeButton">Urme pe zapada</button></li>
+          <li><button id="hamidButton">Hamid si Kinza</button></li>
           <li><button>Misterul din padure</button></li>
           <li><button>Regatul soarelui</button></li>
         </ul>
+        <div id="content">
+          <!-- Lista de episoade -->
+          <ul id="urme-episoade" class="episodes">
+            <li data-audio="/assets/episod1.mp3">
+              <i class="fa-solid fa-square-caret-right"></i> Anette primește un
+              cadou
+            </li>
+            <li data-audio="/assets/episod2.mp3">
+              <i class="fa-solid fa-square-caret-right"></i> Dani se face mare
+            </li>
+            <li data-audio="/assets/episod3.mp3">
+              <i class="fa-solid fa-square-caret-right"></i> O surpriză în cizme
+            </li>
+            <li data-audio="/assets/episod4.mp3">
+              <i class="fa-solid fa-square-caret-right"></i> Cearta
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
-    <div id="content">
-      <ul id="episodes">
-        <li data-audio="/assets/episod1.mp3">
-          <i class="fa-solid fa-square-caret-right"></i> Anette primește un
-          cadou
-        </li>
-        <li data-audio="episod2.mp3">
-          <i class="fa-solid fa-square-caret-right"></i> Dani se face mare
-        </li>
-        <li data-audio="episod3.mp3">
-          <i class="fa-solid fa-square-caret-right"></i> O surpriză în cizme
-        </li>
-        <li data-audio="episod4.mp3">
-          <i class="fa-solid fa-square-caret-right"></i> Cearta
-        </li>
-      </ul>
-    </div>
-    <div class="footer">&copy; Toate drepturile rezervate 2024.</div>
-    <audio id="audioPlayer" controls></audio>
-
     <script>
-      // Select the episode 1 element and the audio player
-      const episode1 = document.querySelector(
-        '#episodes li[data-audio="/assets/episod1.mp3"]'
-      );
+      // Selectăm butonul și lista de episoade
+      const urmeButton = document.getElementById("urmeButton");
+      const urmeEpisodes = document.getElementById("urme-episoade");
 
-      const audioPlayer = document.getElementById("audioPlayer");
-
-      // Add a click event listener to episode 1
-      episode1.addEventListener("click", () => {
-        // Get the audio file path from the data-audio attribute
-        const audioSrc = episode1.getAttribute("data-audio");
-
-        // Set the audio player source to the audio file and play
-        audioPlayer.src = audioSrc;
-        audioPlayer.style.display = "block"; // Make the player visible
-        audioPlayer.play();
+      // Eveniment de click pentru buton
+      urmeButton.addEventListener("click", () => {
+        // Alternăm clasa 'visible' pentru listă
+        urmeEpisodes.classList.toggle("visible");
       });
     </script>
+    <div class="footer">&copy; Toate drepturile rezervate 2024.</div>
   </body>
 </html>
